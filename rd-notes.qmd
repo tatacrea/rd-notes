@@ -1,0 +1,97 @@
+---
+title: "rd-notes"
+author: "kayla"
+format:
+  html: default
+  typst: default
+---
+
+# Weeks 1 and 2
+## Research puzzles
+A research puzzle inheres an *unintuitive* variation in the variable of interest. The existence of variation and the puzzling nature thereof leads to the creation of research questions.
+
+## Typology of research questions
+Kellstedt & Whitten (2012) propose the following typology of research questions: a **new Y** for some X, and a **new X** for an existing Y. The **new Y** approach develops a previously unconceptualised phenomenon in political science into a variable. This then allows the testing of causal hypotheses. Meanwhile, the **new X** approach focuses on the question of 'what else this variable depends on'. Most RQs fall into the latter category given the rarity and risk of the former.
+
+Panke (2018) proposes another classification system, which overlaps in some respects with Kellstedt and Whitten's:
+
+- **X-centred** research questions, which build upon a research puzzle based on observed variation in X and focus on finding a downstream effect of variation in some IV
+- **Y-centred** research questions, which build upon a research puzzle based on observed variation in Y and focus on finding causes of some DV
+
+She asserts that Y-centred questions are a 'safer bet' due to its lower risk of non-findings and proposes a way to convert the X-centred questions into Y-centred ones. The X (IV) should be endogenised, or made into a DV whose variation is to be explained.
+
+
+
+## Research question ideation
+Panke (2018) poses a trilemma between feasibility, innovation, and relevance in the generation of research questions.
+
+Halperin and Heath (2020) propose strategies to narrow down and widen a research question, respectively. To narrow it down, they suggest finding an empirical case or domain to focus on, and then making the findings from that case/domain speak to the broader question. To widen it, they recommend treating it as an instance (case) of some broader political science phenomena.
+
+When coming up with a research question, make sure that you have a.) access to the required data, b.) the necessary skill level to execute the project, c.) the required time and resources, as well as d.) ethical approval.
+
+## Literature review
+A literature review is a piece of argumentative writing outlining your interpretation of key relevant work and evidence for your perspective. It justifies the research project by demonstrating the non-existence of a resolute answer to the question. It also prepares the ground for the elaboration of the researcher's own argument.
+
+When reviewing literature, focus on the paper's central question and the authors' answers to that question.
+
+# Week 3: Conceptualisation
+A concept must be (Gerring & Christenson, 2017)
+
+- Resonant (it is reasonably congruent with existing (lay or academic) understanding of the term)
+- Internally coherent (the phenomena it encompasses should 'look at home with one another')
+- Externally differentiated (the phenomena it encompasses must be clearly delineated from those it doesn't)
+- Theoretically useful (subject to some limits/'scope conditions', it must enable the generation of theory in its application)
+- Consistent: it is understood 'the same way' across the body of literature
+
+A concept can be
+
+- Minimal (with the least amount of detail that still isolates the phenomenon of interest)
+- Maximal (with as much detail as possible to capture its ideal case)
+- Or anywhere in between, driven by functional before formal concerns
+
+## Cases vs observations
+A case is some scientifically relevant grouping of entities that encompasses the whole phenomenon being studied by the scientific enquiry. It is rather loose in scope, especially compared to an observation. An observation, meanwhile, is a unit of analysis on which a single estimate value/quality for each DV of interest is drawn. Therefore, cases can also be observations, especially in comparative and small-$n$ qualitative research. Cases can also contain multiple layers of analysis.
+
+## Selection bias
+Selection bias on the independent variable is less damaging, and purposive selection to maximise the range of IV values is actually desirable. Selection bias on the DV, meanwhile, can be catastrophic. Countless studies seeking to explain macropolitical phenomena of 'lay interest' (e.g., coups d'êtat) select exclusively for cases where the binary DV of 'existence' takes a value of 1 (exists). Others impose arbitrary cutoffs on DV values, creating attenuation bias.
+
+In any case, DV selection, even for range maximisation, is a no-go.
+
+Selection on the IV, meanwhile, will not create bias. Of course, selecting only for one value of the IV is bad for other reasons^[When your IV doesn't vary, you can't analyse how a change in that IV results in a change in your DV], but that aside selection on the IV is actually encouraged.
+
+# Week 4: Case selection
+
+# Week 6: Experiments
+## Morton & Williams, 2008
++ Why do they argue that political scientists have a ‘1950s understanding’ of research methods?
+  + They see existing practice as especially ‘idolising’ randomised control trials
+  _ They disagree that it's the ‘best type of experiment’
++ What is their ‘shibboleth characteristic’ distinguishing experiments from non-experiments?
+  + Researcher intervention in the DGP
+  + Variation in data (especially IV) is at least partially induced by researcher's design choices
++ If they don't think that RCTs are the ideal type of experiments, what do they propose as a ‘better alternative’?
+  + The contention isn't per se in the ‘form’ of the experiment, but rather the assertion that ‘control means baseline’ and random assignment are necessary
+  + They argue that the goal of experimental control is to ‘flatten’ potential confounds and match variables, supported by random assignment
++ What is their primary contention surrounding how existing experimentalists view external validity?
+  + That they're stuck to an outdated understanding centred around
+    + Internal validity as the robustness of the experimental results within the data
+    + External validity as the generalisability beyond the experimental data at hand
+    + The ‘supremacy’ of internal validity
+  + That they conceive of external validity as whether some dataset ‘resembles the unmanipulated DGP’
++ What are SCC's four types of validity?
+  + Statistical conclusion validity: whether the relationship is statistically significant, as well as substantial (effect size)
+  + Internal validity: specifically determining whether the relationship is causal in nature
+  + Construct validity: how valid the inferences of the data are for the constructs/theory being evaluated
+    + Is this dataset appropriate for evaluating the theory?
+    + Does the manipulated DGP resemble the theoretical mechanism?
+  + External validity
++ How do they think experimentalists should view external validity instead?
+  + External validity is about replicating the experiment in different contexts and getting the same results
+  + It speaks to a form of ‘robustness’ (does it hold across datasets and contexts?)
+  + Example: violations of rationality have been established across a significant range of samples/contexts/datasets
++ What is their argument against inductive/exploratory experimentation and for the necessity of theory?
+  + Measuring causality requires hypothetical, theory-driven thinking (such that experimentation is a deductive test of an a priori DGP)
+  + Even when you're ‘searching for facts’, you will inevitably make hypothetical/theoretical leaps in making inferences from your results
+  + Field experiment example: researchers must hypothesise that there are two behavioural choices for each voter, that counterfactual worlds exist, and assume that unobservable variables do not confound the effect/interfere with the randomisation
++ What do they see as the key effects of the technological revolution on political science experimentation?
+  + Random assignment of questions → ability to manipulate the question environment
