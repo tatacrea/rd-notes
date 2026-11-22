@@ -49,6 +49,9 @@ A concept can be
 - Maximal (with as much detail as possible to capture its ideal case)
 - Or anywhere in between, driven by functional before formal concerns
 
+## Determinacy
+A research design is determinate when it a.) has enough *independent* observations or cases^[Think of the 'degrees of freedom' (DOF) concept in statistics] to provide all the estimates/inferences^[An inference is the conclusion we make about some parameter. Parameters map to inferences one-to-one, meaning that inferences and estimates are analogous.] required by the RQ and b.) is not implicated by multicollinearity. Oftentimes, independence is a strong assumption to make, necessitating a prior check for potential violations.
+
 ## Cases vs observations
 A case is some scientifically relevant grouping of entities that encompasses the whole phenomenon being studied by the scientific enquiry. It is rather loose in scope, especially compared to an observation. An observation, meanwhile, is a unit of analysis on which a single estimate value/quality for each DV of interest is drawn. Therefore, cases can also be observations, especially in comparative and small-$n$ qualitative research. Cases can also contain multiple layers of analysis.
 
@@ -62,6 +65,35 @@ Selection on the IV, meanwhile, will not create bias. Of course, selecting only 
 # Week 4: Case selection
 
 # Week 6: Experiments
+## Bol, 2019
+- How does the author define experiments?
+  - Goal: estimate causal effect of treatment on some outcome (treatment effect)
+  - Design: random assignment of treatment
+  - Analysis: difference in means
+- What are the problems which he argues that experiments solve?
+  - Problem of reverse causality (note: in an identification sense, yes. In a 'decisively ruling it out as part of the DGP sense, no.)
+  - Problem of omitted variable bias (since there are no more covariates, at least in theory, due to random assignment)
+- What are the limitations of experiments?
+  - External validity (defined as ‘deviation from real-life situation’, maps closely to Morton & Williams' characterisation of ‘misunderstanding external validity as capturing the unmanipulated DGP’)
+  - Lab experiments ‘being even more artificial’
+  - ‘More work’ because the risk of low internal validity is ‘even starker’ (‘straight up useless’, need to redo entirely)
+- What are the two ideal types of experiments?
+  - Economics-based (behaviour)^[Interesting, because behaviour is the domain of psych theory whereas econ focuses on intent]
+  - Psychology-based (attitude)
+- How (else) do those types differ
+  - Economics: monetary incentive, abstraction of the situation being studied (cf. representational features), focus on group interactions
+  - Psychology: no monetary incentive, realistic reproduction of real-life situation, focus on individual responses (usually in survey form) to the treatment (often a vignette)
+- What are the key challenges of lab experiments?
+  - The external validity issue with convenience samples (necessitates replication with diverse samples and in the field/through e.g., online surveys)
+    - More of a problem with econ-type than psych-type
+  - Ethics, esp. deception‘
+    - Unethical in itself’ due to lying involved
+    - Jeopardises future experimental work as subjects may acquire lasting distrust, and if they get sampled again…
+  - Reproducibility (p-hacking?)
+- What is the author's view of the future of experimentation?
+  - Replication of observational studies for causal inference
+  - Combination of both to counteract each other's limitations (lab experiments: causality, observational: external validity and high-fidelity capture of un-simplified reality)
+  
 ## Morton & Williams, 2008
 + Why do they argue that political scientists have a ‘1950s understanding’ of research methods?
   + They see existing practice as especially ‘idolising’ randomised control trials
