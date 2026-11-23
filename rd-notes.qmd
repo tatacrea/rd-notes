@@ -5,6 +5,10 @@ format:
   html: default
   typst: default
 ---
+# criteria-of-research-questions
+- Panke (2018): feasible, novel, relevant (to society)
+- Halperin & Heath (2020): researchable, relevant (to
+  the field), open to debate
 
 # Weeks 1 and 2
 ## Research puzzles
@@ -63,6 +67,177 @@ In any case, DV selection, even for range maximisation, is a no-go.
 Selection on the IV, meanwhile, will not create bias. Of course, selecting only for one value of the IV is bad for other reasons^[When your IV doesn't vary, you can't analyse how a change in that IV results in a change in your DV], but that aside selection on the IV is actually encouraged.
 
 # Week 4: Case selection
+## All about sampling
+- Why do we still need to ensure sample 'representativeness'
+  in experiments
+
+The basic rule of sampling is to draw cases that mirror the population. This ensures that the relationships we observe between our variables of interest capture the theoretical relationship of interest.
+
+### Random sampling
+Random sampling is a family of probability-based sampling techniques. That is, conditional on some parameters, sample selection is left to chance rather than deliberate.
+
+The poster child of random sampling is *simple random sampling*. This is when every member of the population has an equal probability of being sampled. Its benefits are clearest when the researcher has a very large $n$^[or otherwise a sufficiently large $n$ and sufficiently few covariates]: this technique yields the most representative sample of the population. However, when the study also seeks to uncover subgroup heterogeneity, the sample may not have enough power to recover estimates from especially small subgroups (e.g., racial/religious minorities).
+
+A different type of random sampling is *block random sampling*, also known as *cluster sampling*. This process entails setting up 'minimum quotas' for each 'block'/group of interest and randomly sampling within each group. The minimum quotas are often set such that the study has enough statistical power to estimate within each subgroup for heterogeneity testing. An obvious disadvantage is that the sample is not representative, limiting generalisability.
+
+Yet another different mode of sampling is *stratified sampling*, where random selection takes place in stages, typically involving increasingly small geographical divisions. Its key advantage is that it makes in-person surveying feasible, even affordable. On the flip side, it shares a disadvantage with block random sampling and (on its own) inheres the deficiency that block random sampling solves. In the following paragraph, I illustrate how stratified sampling works by means of an example.
+
+The process can call for a random sample of municipalities proportional to the population size of each province/state. The number of municipalities often does not map cleanly to state-level population size, so even here selection is not entirely random. Then, the sampling procedure can pick random neighbourhoods within each municipality, at which point individuals from unselected municipalities already have zero probability of being sampled. Stratification continues until the street level in face-to-face surveys. This technique is often paired with block random sampling to ensure some form of demographic balance, usually gender and rurality.
+
+One implementation of random sampling is *random-digit dialling*, where a computer dials random numbers. Historically, the interest it received was circumscribed by the inherent bias in only sampling among households wealthy enough to afford a landline connection. This concern has been rapidly attenuated by near-universal penetration of mobile telephony in virtually all developed countries and a majority of developing countries. Nonetheless, persistent concerns abound surrounding reachability, given systematic differences in usage times and patterns, as well as the oversampling of persons or households with multiple numbers.
+
+### Purposive sampling
+Purposive sampling is any form of sampling that isn't probability-based. It has its use cases: a.) as the only feasible approach in small-$n$ studies, and b.) as a tool for maximising variation on the IV. Outside of that, it may needlessly restrict the researcher's ability to pursue different questions with the data set down the line, so a random sample is always preferred outside of the above cases.
+
+**Important**: whatever you do, *never* select on the dependent variable. Even to maximise variation in the DV.
+
+### Case selection and random sampling
+An approach combining case selection and random sampling is to randomly sample within intentionally selected cases. This approach is increasingly adopted in large-scale quantitative and experimental *comparative* studies.
+
+### Censored data
+Data censoring is any form of systematic absence in the data, whether human-induced ('gatekept') or nature-induced.
+
+
+- In what contexts may I encounter censored data?
+  - 'Gatekept data availability' and varying levels of secrecy
+    - See KKV 4.3.1.1: data availability may be correlated with the DV
+  - Data can be 'censored' by a lack of interest, which
+    corresponds to selecting on cases where the DV values
+    converge to the same qualitative 'cluster'
+- Why shouldn't I select along the DV?
+  - What is it anyway?
+  - See KKV (1994)
+    - Extension: don't even do it to maximise DV var.
+    - Specifically, less about the sign of the effect
+      and more about the absolute size
+
+# abadie-et-al-2015
+- How do synthetic controls offer a system to choose
+  comparison units in comparative case studies?
+
+# kkv-ch-3
+- What is variance in causality (just uncertainty of
+  diff in means?)
+  - Yes lol (or even the diff in singular estimates)
+- What does causality look like in qualitative research?
+- What is a mean causal effect (p. 84 para 3 line 4)?
+- How do you define causal eff var in qual research?
+- What is unit homogeneity
+- What is conditional independence
+- How do we judge causal inference designs?
+  - Unbiasedness
+  - Efficiency
+- Why should we construct falsifiable theories?
+- How are formal models in service of internal
+  consistency?
+- What pitfalls should we be aware of in formal modelling?
+  - 
+- How do we carefully select dependent variables?
+  - DVs should be dependent
+  - Do not select obs based on the DV (~ constant)
+  - Choose a DV representing the variation we wish to
+    explain
+- How do we maximise concreteness?
+
+# Week 5: Causal inference
+King, Keohane and Verba (1994) expand upon Holland's (1986 conception of causality by adding stochasticity to the FPCI. They assert that 'even one counterfactual world is not enough' when the variable of interest is random. The counterfactual difference of modifying a variable between one parallel world and another may well just be an artefact of the variable's inherent randomness.
+
+There are alternative understandings of causality: causal mechanisms, multiple causality, as well as symmetric and asymmetric causality.
+
+### toshkov-2016-ch-6
+Toshkov outlines five types of explanation:
+
+| Type | How it works | Limitation |
+| - | - | - |
+| Covering laws | Subsumes facts under deterministic covering laws | Rigid and deterministic |
+| Probabilistic-nomological explanations | Subsumes facts under probabilistic laws | Rigid and problem of low probability |
+| Functional explanation | Works teleologically (in the utility sense) | Requires strong selection mechanisms
+| Intentional explanations | Works teleologically (in the goals/intentions sense) | Intentions unobservable, rarely sufficient |
+| Mechanistic causal experiments | By specifying causal mechanisms | Mechanisms unobservable and uncertain |
+
+- More on the above
+  - Covering laws/deductive-nomological explanations
+    - Deductive derivation from general laws
+    - Deterministic explanation (strong relationships)
+    - Basically irrelevant to the social sciences
+    
+Covering laws/deductive-nomological explanations are derived deductively from general laws. They posit deterministic explanations based on claims of 'strong relationships'. They are for all intents and purposes irrelevant in the social sciences.
+
+  - Probabilistic-nomological explanations
+    - Explain on the basis of (high) likelihood
+      - But still not 'causal'
+    - Still requires more than an empirical generalisation
+      - Probability is relation between statements, not facts
+    - They should work even when the outcome has a
+      small probability of happening
+
+Probabilistic-nomological explanations are the probabilistic counterpart of covering laws. They make explanatory claims on the basis of (high) likelihood, even if the argument is still not causal. 
+
+Functional explanations are explanations framing the outcome of some behaviour as the cause, and the behaviour itself as the effect. They require the assumption of a causal mechanism incentivising and selecting 'beneficial' behaviour or traits to make them more prevalent. Importantly, the filtering should be harsh enough for the explanation to work.
+
+Intentional explanations ... The problem with intentional explanations is that individual intentions do not necessarily aggregate to the expected collective outcome. As a result, they are usually not enough for explanation.
+
+
+
+  - Mechanistic causal experiments
+    - Requires temporal sequencing/precedence
+    - Requires linkage to the 'real world' (unlike
+      intentional explanations)
+    - Focuses on 'the contingent'
+    - Not teleological
+    - Endorses scientific realism at the expense of
+      pure empiricism and radical subjectivism
+    - Can be, but not necessarily, tied to
+      methodological individualism
+    - Compatible with statistical explanations
+- What do general patterns and particular facts have
+  to do with causality?
+  - Causality in political science pertains to both
+  - It can explain why The Electorate Behaves This Way
+    or why some event happened
+- Complete and partial, deterministic and probabilistic
+  - Complete: account fully for a fact/event/pattern
+    - Deterministic
+  - Partial: probabilistically explore w/ stats
+
+A complete explanation must be both individually necessary (if any factor is missing, the outcome won't occur) and jointly sufficient (nothing else is required for the outcome to occur). A partial explanation is an insufficient but non-redundant part of an unnecessary but sufficient condition.
+
+Causation can also be divided into prospective and retrospective causation. The prospective type concerns itself with the effects of causes and is therefore amenable to experimental-large-$n$ studies. The retrospective type seeks to understand what caused specific events, for which a within-case analysis (with process tracing) is more appropriate.
+
+
+- How is prediction materially different from causation?
+  - Prediction is a temporal extrapolation of an assoc
+- How is manipulation different from causation?
+  - To Holland (1986), intervention and manipulation
+    are necessary for causal explanations
+    - Fruitful to consider causation as if interventions
+      would be possible
+    - 'Causes' that cannot be controlled or manip'd
+      even in principle are of limited utility
+      
+Causation is also different from manipulation/intervention
+  
+- Description–Explanation spectrum
+  - Description I: sample association
+  - Description II: DI + pop-level generalisation
+  - Prediction: DII + temporal extrapolation
+  - Explanation I: P + intervention/control
+  - Explanation II: EI + understanding
+- What are the general steps for causal inference?
+  - Form a causal hypothesis
+  - Elucidate a causal mechanism
+  - Derive additional observable implications
+  - Outline alternative explanations and their
+    observable implications
+  - Compare with data
+- How does model-based inference work
+  - Condition on/control for some confounder
+  - Assume that the relevant mediator is not related
+    to the confounding variable
+  - Use the 'credible assumptions' that
+    - Some pre-causal variable causing X only
+      influences it and not Y directly
+    - It is unaffected by the confounding
 
 # Week 6: Experiments
 ## Bol, 2019
